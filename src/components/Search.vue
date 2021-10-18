@@ -82,9 +82,17 @@
       </li>
     </ul> -->
   </div>
+  <NavBar/>
+  <div>
+  <router-view :lookForCharacter="lookForCharacter"
+    :orderBy="orderBy"
+    :searchBy="searchBy"/>
+  </div>
 </template>
 
 <script>
+import NavBar from "./NavBar.vue";
+
 export default {
   data() {
     return {
@@ -95,18 +103,8 @@ export default {
     };
   },
 
-  watch: {
-    lookForCharacter() {
-      this.$emit("typeCharacter", this.lookForCharacter);
-    },
-
-    orderBy() {
-      this.$emit("handleOrderChange", this.orderBy);
-    },
-
-    searchBy() {
-      this.$emit("handleSearchChange", this.searchBy);
-    },
+  components: {
+    NavBar
   },
 
   methods: {

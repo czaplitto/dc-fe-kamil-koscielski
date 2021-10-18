@@ -4,18 +4,18 @@ const routes = [
   {
     path: '/',
     name: 'Search',
-    component: () => import('../components/Search.vue')
+    component: () => import('../components/Search.vue'),
+    children: [{
+      path: '/',
+      component: () => import('../components/Table.vue'),
+      props: true,
+    }, {
+      path: '/favorites',
+      component: () => import('../components/Table.vue'),
+      props: true,
+    }],
+    props:true,
   },
-  {
-    path: '/',
-    name: 'Table',
-    component: () => import('../components/Table.vue')
-  },
-  {
-    path: '/favorites',
-    name: 'Table',
-    component: () => import('../components/Table.vue')
-  }
 ]
 
 const router = createRouter({
