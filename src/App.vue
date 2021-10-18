@@ -10,15 +10,7 @@ export default {
   name: "app",
   data() {
     return {
-      orderBy: "Name",
-      searchBy: "Name",
-      lookForCharacter: "",
     };
-  },
-  components: {
-  },
-
-  methods: {
   },
 };
 </script>
