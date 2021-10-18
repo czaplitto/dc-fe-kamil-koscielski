@@ -2,7 +2,6 @@ import axios from "axios";
 
 class EpisodeService {
     constructor() {
-      //todo
     }
 
       async getEpisodeInfo() {

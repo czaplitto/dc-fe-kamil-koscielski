@@ -2,8 +2,6 @@ import axios from "axios";
 
 class CharacterService {
     constructor() {
-    //todo
-    //const url = `https://rickandmortyapi.com/api/character/`
     }
     async getCharacters() {
         const response = await axios.get(

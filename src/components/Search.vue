@@ -58,24 +58,6 @@
         >
           Order by {{ orderBy }}
         </button>
-        <!-- <div
-          data-bs-toggle="dropdown"
-          class="order-part d-flex flex-row flex-nowrap w-100"
-        >
-          <button
-            class="btn order-drop-button shadow-none hover-none text-left w-75"
-            type="button"
-            aria-expanded="false"
-            aria-labelledby="dropdownMenuButton2"
-          >
-            Order by {{ orderBy }}
-          </button>
-          <button
-            type="button"
-            class="btn dropdown-toggle dropdown-toggle-split border-0 shadow-none w-25"
-            aria-expanded="false"
-          ></button>
-        </div> -->
         <ul
           class="dropdown-menu p-0 w-100"
           aria-labelledby="dropdownMenuButton2"

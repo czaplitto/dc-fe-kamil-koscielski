@@ -72,7 +72,6 @@
                 :style="[styleDisabledPrevButton()]"
               ></i>
             </button>
-
             <button
               type="button"
               class="page-link"
