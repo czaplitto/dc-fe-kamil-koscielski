@@ -259,16 +259,14 @@ export default {
       }
     },
 
+    filterAddedName(element) {
+      return (this.checkedNames.filter((checkedName) => checkedName.id === element.id) || []).length > 0;
+    },
+
     addToFavorites(elem) {
       try {
         this.checkLocalStorage();
-        if (
-          (
-            this.checkedNames.filter(
-              (checkedName) => checkedName.id === elem.id
-            ) || []
-          ).length > 0
-        ) {
+        if (this.filterAddedName(elem)) {
           this.checkedNames = this.checkedNames.filter(
             (checkedName) => checkedName.id !== elem.id
           );
